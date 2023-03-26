@@ -1,0 +1,21 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] list = {1, 7, 23, -3, 45, -12};
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz : ");
+        int number = input.nextInt();
+
+        for(int i= 0; i < list.length; i++){
+
+            if(number >= list[i] && number <= list[i+1]){
+                System.out.println("Girilen sayıdan küçük en yakın sayı : " + list[i]);
+                System.out.println("Girilen sayıdan büyük en yakın sayı : " + list[i+1]);
+                break;
+            }
+        }
+    }
+}
